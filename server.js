@@ -2,7 +2,7 @@
 //  OpenShift sample Node application
 var express = require('express');
 var fs      = require('fs');
-
+var io = require('socket.io');
 
 /**
  *  Define the sample application.
