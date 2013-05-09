@@ -1,9 +1,12 @@
 var express = require('express')
-  , io = require('socket.io')
+  , io = require('socket.io');
 
-  , app = express()
-  , server = require('http').createServer(app)
-  , io = io.listen(server);
+var app = express.createServer();
+var io = io.listen(app);
+
+ // , app = express()
+ // , server = require('http').createServer(app)
+ // , io = io.listen(server);
 
 // The socket.io server.
 console.log('socket.io server listening on port 8000');
