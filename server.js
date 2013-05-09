@@ -1,25 +1,16 @@
-var express = require('express')
-  , io = require('socket.io')
-  , http = require('http');
-
-var app = express();
-var server = http.createServer(app);
-var io = io.listen(server);
-
- // , app = express()
- // , server = require('http').createServer(app)
- // , io = io.listen(server);
-
-// The socket.io server.
-console.log('socket.io server listening on port 8000');
+var app = require('express')()
+  , server = require('http').createServer(app)
+  , io = require('socket.io').listen(server);
 
 server.listen(8000);
+
+console.log('socket.io server listening on port 8000');
 console.log('application server listening on port 8000');
 
 ///////////////////////////////////////////////////////////////////////////////
 
-//app.use(express.static(__dirname));
-//app.use(express.bodyParser());
+app.use(express.static(__dirname));
+app.use(express.bodyParser());
 
 var allowedUserData = ['etoccalino','ivan'];
 
