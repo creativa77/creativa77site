@@ -30,7 +30,7 @@
         }
       }
 
-      var socket = io.connect('http://keycounterkc-iarcuschin.rhcloud.com:8000/key-count')
+      var socket = io.connect('/key-count')
         , cache = {}
         , cacheLimitPerUser = 20;
 
