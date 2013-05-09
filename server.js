@@ -2,7 +2,10 @@ var app = require('express')()
   , server = require('http').createServer(app)
   , io = require('socket.io').listen(server);
 
-server.listen(8000);
+var PORT = process.env.OPENSHIFT_INTERNAL_PORT || 8000;
+var IPADDRESS = process.env.OPENSHIFT_INTERNAL_IP || '127.0.0.1';
+server.listen(PORT, IPADDRESS);
+//server.listen(8000);
 
 console.log('socket.io server listening on port 8000');
 console.log('application server listening on port 8000');
