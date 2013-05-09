@@ -13,7 +13,7 @@ var io = io.listen(server);
 // The socket.io server.
 console.log('socket.io server listening on port 8000');
 
-app.listen(8000);
+server.listen(8000);
 console.log('application server listening on port 8000');
 
 ///////////////////////////////////////////////////////////////////////////////
