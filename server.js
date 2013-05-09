@@ -9,9 +9,6 @@ console.log('application server listening on port 8000');
 
 ///////////////////////////////////////////////////////////////////////////////
 
-server.use(app.static(__dirname));
-server.use(app.bodyParser());
-
 var allowedUserData = ['etoccalino','ivan'];
 
 var collected_ = {};
@@ -32,6 +29,11 @@ function resetCollected (newCollected) {
   //   }
   // }
 }
+
+//mostrar la pagina
+app.get('/', function (req, res) {
+  res.sendfile(__dirname + '/index.html');
+});
 
 // Collect data as it comes
 app.post('/counts', function (req, res) {
