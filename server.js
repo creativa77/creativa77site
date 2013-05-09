@@ -1,8 +1,10 @@
 var express = require('express')
-  , io = require('socket.io');
+  , io = require('socket.io')
+  , http = require('http');
 
-var app = express.createServer();
-var io = io.listen(app);
+var app = express();
+var server = http.createServer(app);
+var io = io.listen(server);
 
  // , app = express()
  // , server = require('http').createServer(app)
