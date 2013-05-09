@@ -6,7 +6,7 @@ var express = require('express')
   , io = io.listen(server);
 
 // The socket.io server.
-server.listen(8000);
+//server.listen(8000);
 console.log('socket.io server listening on port 8000');
 
 app.listen(3000);
@@ -72,7 +72,7 @@ setInterval(function () {
       value = value + collected[user][i];
     }
     data.push({username: user, count: value / collected[user].length});
-	console.log(JSON.strngify(data);
+	console.log(JSON.stringify(data));
   }
   // Emit to connected clients to update their counts.
   io.of('/key-count').emit('users update', data);
