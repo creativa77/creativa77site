@@ -6,10 +6,10 @@ var express = require('express')
   , io = io.listen(server);
 
 // The socket.io server.
-//server.listen(8000);
+server.listen(8000);
 console.log('socket.io server listening on port 8000');
 
-app.listen(3000);
+//app.listen(3000);
 console.log('application server listening on port 3000');
 
 ///////////////////////////////////////////////////////////////////////////////
