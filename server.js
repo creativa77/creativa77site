@@ -11,6 +11,9 @@ console.log('application server listening on port 8000');
 
 var allowedUserData = ['etoccalino','ivan'];
 
+app.use(require('express').static(__dirname));
+app.use(require('express').bodyParser());
+
 var collected_ = {};
 function getCollected () {
   var clone = {};
