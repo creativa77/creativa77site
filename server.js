@@ -11,7 +11,7 @@ console.log('application server listening on port 8000');
 
 ///////////////////////////////////////////////////////////////////////////////
 
-var allowedUserData = ['etoccalino','ivan'];
+var allowedUserData = ['etoccalino','ivan','jcerruti','sebasgm85','tlau','tulku'];
 
 app.use(require('express').static(__dirname));
 app.use(require('express').bodyParser());
