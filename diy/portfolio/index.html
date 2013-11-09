@@ -51,6 +51,20 @@
         <hr>
 
         <div class="well well-large portfolio-container">
+          <span class="portfolio-item-title">Bringing personal robots to the service industries. </span>
+          <span class="portfolio-item-description">This project was a collaboration between Creativa 77 and <a href="http://www.willowgarage.com/">Willow Garage</a> to take their personal robots to the next level and use them to provide services for industries such as hospitals or restaurants.
+          </span>
+          <div class="portfolio-item-contributions">
+          <p>We contributed with our expertise on <span class="label label-success">system integration</span> for bringing some of the existing modules and projects into the services market. We defined the system architecture and adapted the development infrastructure from an open source research project to a private product development business. </p>
+
+          <p>At the UX level we created intuitive web interfaces for complex robotics problems using <span class="label label-success">Ember.js</span>, <span class="label label-success">Web Sockets</span> and the <span class="label label-success">Robot Web Tools</span> bundle. We also tackle the problem of non-expert users controlling robots under continuous operation and end-user robot programming.</p>
+
+          <p>At the backend level we worked throughout the whole <span class="label label-success">ROS stack</span> using <span class="label label-success">C++</span> and <span class="label label-success">Python</span> to implement multiple robot networks (each one with its own master node) and extended the python client API. We also performed <span class="label label-success">kinematics analysis</span> on different client environments using <span class="label label-success">MoveIt!</span>.</p>
+          </div>
+        </div>     
+
+
+        <div class="well well-large portfolio-container">
           <span class="portfolio-item-title">Real-time transcription by non-expert captionist crowdsourcing. </span>
           <span class="portfolio-item-description">Scribe collects audio from a mobile device and schedules workers to perform captioning on small audio segments.
             The distributed captions are then merged into a single text, returning a consolidated transcript to the mobile user.
@@ -72,7 +86,7 @@
 
         <div class="well well-large portfolio-container">
           <span class="portfolio-item-title"> Porting ROS to Android devices. </span>
-          <span class="portfolio-item-description">ROS (Robot Operating System) is a framework for robot software development that runs on top of a linux-based OS. The aim of Convergence is to develop an autonomous robot using ROS on an Android device attached to a robot.
+          <span class="portfolio-item-description">The aim of this project is to develop an autonomous robot system using <a href="http://wiki.ros.org" target="_blank">ROS</a> that executes entirely on an Android device.
           </span>
           <div class="portfolio-item-contributions">
             We contributed to <a href="http://wiki.ros.org/rosjava" target="_blank">ROS Java</a> by implementing a <a href="https://github.com/creativa77/base_controller" target="_blank">base controller</a> from scratch, extend it to use the multiple radios instead of just WiFi and added the ability to create externally reachable masters in an <span class="label label-success">Android</span> device. We are also diving into <span class="label label-success">ROS internals</span> to isolate the minimum required modules for a robot to navigate autonomously. Depending on the situation we are re-implementing core functionality in <span class="label label-success">Java</span> or compiling existing sources with <span class="label label-success">Android NDK</span>.
